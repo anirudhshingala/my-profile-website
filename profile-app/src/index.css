@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f2f5;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+class h1-css {
+  color: #fffafa;
+}
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
