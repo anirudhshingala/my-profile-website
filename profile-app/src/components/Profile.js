@@ -1,19 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SectionCard, SectionTitle } from './Section';
 
 const ProfileContainer = styled.section`
-  padding: 20px;
-  background-color: #f5f5f5;
+  padding: 0;
 `;
 
 const Profile = () => {
   return (
     <ProfileContainer>
-      <h2>Profile</h2>
-      <p>
-        SRE with 3+ years of experience. Proficient in SRE and DevOps tools and processes,
-        automating tasks, and troubleshooting in hybrid cloud environments.
-      </p>
+      <SectionCard>
+        <SectionTitle>About</SectionTitle>
+        <p>
+          SRE / Platform Engineer with 5+ years of overall experience. Proficient in SRE and DevOps
+          tools and processes, automating tasks, and troubleshooting hybrid cloud environments and
+          application failures. I enjoy designing products and automation tools from scratch,
+          optimizing infrastructure and delivery systems, integrating external tools, and converting
+          ideas into practical working solutions. Strong ownership mindset, comfortable in fast-paced
+          environments, and able to drive end-to-end delivery with minimal hand-holding.
+        </p>
+      </SectionCard>
     </ProfileContainer>
   );
 };

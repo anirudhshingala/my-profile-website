@@ -20,7 +20,7 @@ const Header = () => {
       <h1 style={{ color: 'white' }}>Anirudh Shingala</h1>
       <ContactInfo>
         <p>Mumbai, India</p>
-        <p>9987732177</p>
+        <p>+91 9987732177</p>
         <p>shingalaanirudh07@gmail.com</p>
       </ContactInfo>
     </HeaderContainer>

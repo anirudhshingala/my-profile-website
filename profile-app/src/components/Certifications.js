@@ -1,18 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SectionCard, SectionTitle } from './Section';
 
 const CertificationsContainer = styled.section`
-  padding: 20px;
-  background-color: #f5f5f5;
+  padding: 0;
 `;
 
 const Certifications = () => {
   return (
     <CertificationsContainer>
-      <h2>Certifications</h2>
-      <ul>
-        <li>CKA: Certified Kubernetes Administrator - December 2023</li>
-      </ul>
+      <SectionCard>
+        <SectionTitle>Certifications</SectionTitle>
+        <ul>
+          <li>CKA: Certified Kubernetes Administrator - December 2023</li>
+        </ul>
+      </SectionCard>
     </CertificationsContainer>
   );
 };
