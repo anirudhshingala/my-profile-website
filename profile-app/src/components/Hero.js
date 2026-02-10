@@ -83,6 +83,21 @@ const InfoCard = styled.div`
   box-shadow: ${({ theme }) => theme.shadow.card};
 `;
 
+const AvatarWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+`;
+
+const Avatar = styled.img`
+  width: 112px;
+  height: 112px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  box-shadow: 0 0 0 6px rgba(110, 231, 255, 0.08), 0 18px 40px rgba(0, 0, 0, 0.45);
+`;
+
 const InfoRow = styled.div`
   display: flex;
   justify-content: space-between;
@@ -124,6 +139,9 @@ const Hero = () => {
             </Actions>
           </div>
           <InfoCard>
+            <AvatarWrap>
+              <Avatar src={`${process.env.PUBLIC_URL}/profile.png`} alt="Anirudh Shingala" />
+            </AvatarWrap>
             <InfoRow>
               <Label>Location</Label>
               <Value>Mumbai, India</Value>
