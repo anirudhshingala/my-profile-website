@@ -39,6 +39,32 @@ const Value = styled.div`
   text-align: right;
 `;
 
+const ValueRow = styled.div`
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+`;
+
+const CopyButton = styled.button`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 10px;
+  background: ${({ theme }) => theme.colors.surface};
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  color: ${({ theme }) => theme.colors.text};
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+
+  &:hover {
+    background: ${({ theme }) => theme.colors.surfaceStrong};
+  }
+`;
+
 const Links = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -65,6 +91,32 @@ const LinkButton = styled.a`
 `;
 
 const Footer = () => {
+  const email = 'shingalaanirudh07@gmail.com';
+  const [copied, setCopied] = React.useState(false);
+
+  const copyEmail = async () => {
+    try {
+      if (navigator?.clipboard?.writeText) {
+        await navigator.clipboard.writeText(email);
+      } else {
+        const el = document.createElement('textarea');
+        el.value = email;
+        el.setAttribute('readonly', '');
+        el.style.position = 'absolute';
+        el.style.left = '-9999px';
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+      }
+
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1200);
+    } catch (e) {
+      // no-op
+    }
+  };
+
   return (
     <FooterContainer>
       <SectionCard>
@@ -81,7 +133,12 @@ const Footer = () => {
             </ContactRow>
             <ContactRow>
               <Label>Email</Label>
-              <Value>shingalaanirudh07@gmail.com</Value>
+              <Value>
+                <ValueRow>
+                  <span>{email}</span>
+                  <CopyButton type="button" onClick={copyEmail}>{copied ? 'Copied' : 'Copy'}</CopyButton>
+                </ValueRow>
+              </Value>
             </ContactRow>
           </div>
           <div>
