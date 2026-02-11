@@ -80,6 +80,7 @@ const Navbar = () => {
             <NavLink href="#education">Education</NavLink>
             <NavLink href="#certifications">Certifications</NavLink>
             <NavLink href="#awards">Awards</NavLink>
+            <NavLink href="#blogs">Blogs</NavLink>
             <NavLink href="#contact">Contact</NavLink>
           </Links>
           <Right>

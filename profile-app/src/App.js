@@ -7,6 +7,7 @@ import EmploymentHistory from './components/EmploymentHistory';
 import Education from './components/Education';
 import Certifications from './components/Certifications';
 import Awards from './components/Awards';
+import Blogs from './components/Blogs';
 import Footer from './components/Footer';
 import { Container, Section } from './components/Section';
 
@@ -39,6 +40,10 @@ function App() {
 
         <Section id="awards">
           <Awards />
+        </Section>
+
+        <Section id="blogs">
+          <Blogs />
         </Section>
 
         <Section id="contact">
