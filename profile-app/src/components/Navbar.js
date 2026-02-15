@@ -91,10 +91,10 @@ const Navbar = () => {
             <NavLink href="#blogs">Blogs</NavLink>
             <NavLink href="#contact">Contact</NavLink>
           </Links>
-          <Right>
+          {/* <Right>
             <Button href="https://www.linkedin.com/in/anirudhshingala" target="_blank" rel="noopener noreferrer">LinkedIn</Button>
             <Button href="https://github.com/anirudhshingala" target="_blank" rel="noopener noreferrer">GitHub</Button>
-          </Right>
+          </Right> */}
         </NavInner>
       </Container>
     </NavWrap>

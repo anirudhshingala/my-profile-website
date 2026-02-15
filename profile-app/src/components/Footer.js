@@ -124,14 +124,6 @@ const Footer = () => {
         <ContactGrid>
           <div>
             <ContactRow>
-              <Label>Location</Label>
-              <Value>Mumbai, India</Value>
-            </ContactRow>
-            <ContactRow>
-              <Label>Phone</Label>
-              <Value>+91 9987732177</Value>
-            </ContactRow>
-            <ContactRow>
               <Label>Email</Label>
               <Value>
                 <ValueRow>
@@ -140,15 +132,27 @@ const Footer = () => {
                 </ValueRow>
               </Value>
             </ContactRow>
+             <ContactRow>
+              <Label>Links</Label>
+              <Value>
+                <ValueRow>
+                 <Links>
+                  <LinkButton href="https://www.linkedin.com/in/anirudhshingala" target="_blank" rel="noopener noreferrer">LinkedIn</LinkButton>
+                  <LinkButton href="https://github.com/anirudhshingala" target="_blank" rel="noopener noreferrer">GitHub</LinkButton>
+                  <LinkButton href="https://medium.com/@shingalaanirudh" target="_blank" rel="noopener noreferrer">Medium</LinkButton>
+                </Links>
+                </ValueRow>
+              </Value>
+            </ContactRow>
           </div>
-          <div>
+          {/* <div>
             <Label style={{ marginBottom: 10 }}>Links</Label>
             <Links>
               <LinkButton href="https://www.linkedin.com/in/anirudhshingala" target="_blank" rel="noopener noreferrer">LinkedIn</LinkButton>
               <LinkButton href="https://github.com/anirudhshingala" target="_blank" rel="noopener noreferrer">GitHub</LinkButton>
               <LinkButton href="https://medium.com/@shingalaanirudh" target="_blank" rel="noopener noreferrer">Medium</LinkButton>
             </Links>
-          </div>
+          </div> */}
         </ContactGrid>
       </SectionCard>
     </FooterContainer>

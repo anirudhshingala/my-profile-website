@@ -56,11 +56,11 @@ const skillGroups = [
   },
   {
     title: 'IaC & Automation',
-    items: ['Terraform', 'Terraform modules', 'Feature environments', 'n8n', 'Budibase', 'Scripting']
+    items: ['Terraform', 'Terraform modules', 'Feature environments', 'n8n', 'Budibase', 'Launchdarkly', 'Scripting']
   },
   {
     title: 'Observability',
-    items: ['Datadog', 'Grafana', 'Prometheus', 'Alerting']
+    items: ['Datadog', 'Grafana', 'Prometheus', 'Alerting', 'Loki', 'Tracing and Profiling']
   },
   {
     title: 'Languages & Practices',
