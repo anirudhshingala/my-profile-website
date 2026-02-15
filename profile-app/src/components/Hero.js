@@ -16,10 +16,36 @@ const Grid = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  font-size: 44px;
+const Greeting = styled.h1`
+  font-size: 48px;
+  line-height: 1.05;
+  font-weight: 700;
+  margin-bottom: 8px;
+
+  @media (max-width: 900px) {
+    font-size: 38px;
+  }
+`;
+
+const Name = styled.span`
+  font-size: 64px;
   line-height: 1.05;
   font-weight: 900;
+  background: linear-gradient(90deg, ${({ theme }) => theme.colors.primary}, ${({ theme }) => theme.colors.primary2});
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  @media (max-width: 900px) {
+    font-size: 54px;
+  }
+`;
+
+const Title = styled.h2`
+  font-size: 25px;
+  line-height: 1.05;
+  font-weight: 900;
+  margin-top: 14px;
   margin-bottom: 14px;
 
   @media (max-width: 900px) {
@@ -86,16 +112,24 @@ const InfoCard = styled.div`
 const AvatarWrap = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 14px;
+  align-items: flex-start;
+  height: 100%;
+  padding-top: 0px;
 `;
 
 const Avatar = styled.img`
-  width: 112px;
-  height: 112px;
+  width: 280px;
+  height: 280px;
   border-radius: 999px;
   object-fit: cover;
   border: 1px solid ${({ theme }) => theme.colors.border};
   box-shadow: 0 0 0 6px rgba(110, 231, 255, 0.08), 0 18px 40px rgba(0, 0, 0, 0.45);
+  margin-top: 0px;
+
+  @media (max-width: 900px) {
+    width: 200px;
+    height: 200px;
+  }
 `;
 
 const InfoRow = styled.div`
@@ -127,6 +161,7 @@ const Hero = () => {
       <Container>
         <Grid>
           <div>
+            <Greeting><Name>Anirudh Shingala</Name></Greeting>
             <Title>Platform Engineer / SRE building reliable systems and automation.</Title>
             <Subtitle>
               Based in Mumbai, India. 5+ years across SRE, DevOps, CI/CD, and infrastructure automation.
@@ -138,23 +173,11 @@ const Hero = () => {
               <Secondary href="#contact">Contact</Secondary>
             </Actions>
           </div>
-          <InfoCard>
+          <div>
             <AvatarWrap>
               <Avatar src={`${process.env.PUBLIC_URL}/profile.png`} alt="Anirudh Shingala" />
             </AvatarWrap>
-            <InfoRow>
-              <Label>Location</Label>
-              <Value>Mumbai, India</Value>
-            </InfoRow>
-            <InfoRow>
-              <Label>Phone</Label>
-              <Value>+91 9987732177</Value>
-            </InfoRow>
-            <InfoRow>
-              <Label>Email</Label>
-              <Value>shingalaanirudh07@gmail.com</Value>
-            </InfoRow>
-          </InfoCard>
+          </div>
         </Grid>
       </Container>
     </Wrap>

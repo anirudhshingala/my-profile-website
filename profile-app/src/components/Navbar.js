@@ -25,6 +25,14 @@ const Brand = styled.a`
   text-decoration: none;
 `;
 
+const Avatar = styled.img`
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid ${({ theme }) => theme.colors.border};
+`;
+
 const Links = styled.nav`
   display: flex;
   gap: 16px;
@@ -72,7 +80,7 @@ const Navbar = () => {
     <NavWrap>
       <Container>
         <NavInner>
-          <Brand href="#home">Anirudh Shingala</Brand>
+          <Brand href="#home"><Avatar src={`${process.env.PUBLIC_URL}/navbar.png`} alt="Anirudh Shingala" /></Brand>
           <Links>
             <NavLink href="#about">About</NavLink>
             <NavLink href="#skills">Skills</NavLink>

@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.section`
-  padding: 56px 0;
+  padding: 25px 0;
 `;
 
 export const SectionCard = styled.div`
