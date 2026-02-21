@@ -12,9 +12,9 @@ const Profile = () => {
       <SectionCard>
         <SectionTitle>About</SectionTitle>
         <p>
-          SRE / Platform Engineer with 5+ years of overall experience. Proficient in SRE and DevOps
-          tools and processes, automating tasks, and troubleshooting hybrid cloud environments and
-          application failures. I enjoy designing products and automation tools from scratch,
+          Platform Engineer/SRE with 5+ years of overall experience. Proficient in automation,
+          tools and processes. Troubleshooting hybrid cloud environments and
+          application failures. I enjoy designing products and tools from scratch,
           optimizing infrastructure and delivery systems, integrating external tools, and converting
           ideas into practical working solutions. Strong ownership mindset, comfortable in fast-paced
           environments, and able to drive end-to-end delivery with minimal hand-holding.

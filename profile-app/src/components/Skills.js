@@ -64,7 +64,7 @@ const skillGroups = [
   },
   {
     title: 'Languages & Practices',
-    items: ['Go', 'Python', 'Git', 'Project management', 'Ownership', 'Problem solving']
+    items: ['Python', 'Bash', 'Go', 'Git', 'Project management', 'Ownership', 'Problem solving', 'Getting things done']
   }
 ];
 

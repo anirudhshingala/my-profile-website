@@ -162,10 +162,11 @@ const Hero = () => {
         <Grid>
           <div>
             <Greeting><Name>Anirudh Shingala</Name></Greeting>
-            <Title>Platform Engineer / SRE building reliable systems and automation.</Title>
+            <Title>Platform Engineer/SRE building reliable systems and automation.</Title>
             <Subtitle>
-              Based in Mumbai, India. 5+ years across SRE, DevOps, CI/CD, and infrastructure automation.
-              I design platform tooling from scratch, optimize delivery systems, and ship practical solutions fast.
+              Based in Mumbai, India. 5+ years of experience across Devops, SRE and Platform Engineering.
+              I design and build platform tools, optimize delivery systems, have worked on improving developer experience
+              and ship practical solutions fast.
             </Subtitle>
             <Actions>
               <Primary href="#experience">View Experience</Primary>
