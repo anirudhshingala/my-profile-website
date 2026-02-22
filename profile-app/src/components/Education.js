@@ -26,7 +26,6 @@ const Education = () => {
         <Degree>
           <DegreeTitle>BE Computer Engineering, Mumbai University, Mumbai</DegreeTitle>
           <p>June 2016 — May 2020</p>
-          <p>Graduated with a 7.91 CGPA.</p>
         </Degree>
       </SectionCard>
     </EducationContainer>
